@@ -3,7 +3,7 @@ import {Button, Card, Col, Container, Row, Stack, Table} from 'react-bootstrap'
 const UiCards = () => {
   return (
     <>
-<Container className='container fluid'>
+<Container className='container fluid border'>
 <Row className='m-2 '>
     <Col className=' text-center border' ><h4>First Examination 29</h4></Col>
 </Row>
@@ -21,19 +21,29 @@ const UiCards = () => {
             <h5 style={{color:"blue"}}>Part-I</h5>
             </Row>
            <Row>
-           <Col  className=' text-center border fw-bold'>SrNo</Col>
-           <Col  className=' text-center border fw-bold text-primary'>Subjects</Col>
-           <Col  className=' text-center border'>
-            <Row>
-                <Col>MAA</Col>
-                <Col>MAA</Col>
-                <Col>MAA</Col>
-                <Col>MAA</Col>
-                <Col>MAA</Col>
+           <Col  className=' text-center border fw-bold p-2'xs lg="1">SrNo</Col>
+           <Col  className=' text-center border fw-bold text-primary p-2' xs lg="2">Subjects</Col>
+           <Col  className=' text-center border'xs lg="9">
+            <Row >
+                <Col className=' text-center border fw-normal p-1'>FA</Col>
+                <Col className=' text-center border fw-normal p-1'>Oral</Col>
+                <Col className=' text-center border fw-normal p-1'>BA</Col>
+                <Col className=' text-center border fw-normal p-1'>Oral</Col>
+                <Col className=' text-center border fw-normal fs-6 p-1'>Total</Col>
+
+            </Row>
+            <Row >
+                <Col className=' text-center border'>20</Col>
+                <Col className=' text-center border'>
+                    100
+                </Col>
+                <Col className=' text-center border'>70</Col>
+                <Col className=' text-center border'>80</Col>
+                <Col className=' text-center border'>90</Col>
 
             </Row>
            </Col>
-           <Col  className=' text-center border'>Name</Col>
+          
            </Row>
    
         </Col>

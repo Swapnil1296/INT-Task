@@ -1,0 +1,44 @@
+{
+    "part-1":[
+        {
+            "N":1,
+            "Name":"Swapnil",
+            "marks":{
+                "Math":70,
+                "english":70,
+                "science":78,
+                "History":90,
+                "Physics":80
+            }
+
+        }
+    ],
+    "part-2":[
+        {
+            "N":1,
+            "Name":"Swapnil",
+            "marks":{
+                "Math":70,
+                "english":70,
+                "science":78,
+                "History":90,
+                "Physics":80
+            }
+
+        }
+    ],
+    "part-3":[
+        {
+            "N":1,
+            "Name":"Swapnil",
+            "marks":{
+                "Math":70,
+                "english":70,
+                "science":78,
+                "History":90,
+                "Physics":80
+            }
+
+        }
+    ]
+}

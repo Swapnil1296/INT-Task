@@ -8,6 +8,8 @@ import {
   Stack,
   Table,
 } from "react-bootstrap";
+import MarkAssigned from "../MarkAssigned/MarkAssigned";
+import TotalMarks from "../TotalMarks/TotalMarks";
 const UiCards = () => {
   return (
     <>
@@ -54,18 +56,14 @@ const UiCards = () => {
                     Total
                   </Col>
                 </Row>
-                <Row>
-                  <Col className=" text-center border">20</Col>
-                  <Col className=" text-center border">100</Col>
-                  <Col className=" text-center border">70</Col>
-                  <Col className=" text-center border">80</Col>
-                  <Col className=" text-center border">90</Col>
-                </Row>
+{/*  out of marks */}
+   <TotalMarks/>
               </Col>
             </Row>
+            <MarkAssigned/>
           </Col>
           <Col className=" text-center border">
-            <h5 style={{ color: "blue" }} class>Part-II :-Co-Scholastic Areas</h5>
+            <h5 style={{ color: "blue" }} >Part-II :-Co-Scholastic Areas</h5>
           </Col>
         </Row>
       </Container>

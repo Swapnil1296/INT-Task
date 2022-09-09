@@ -1,5 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
-import MarksTable from "./MarksTable";
+
+import SectionOne from "./SectionOne";
 
 const UserView = () => {
   return (
@@ -15,21 +16,15 @@ const UserView = () => {
             <h5 className="text-primary fs-5">Academic Performance</h5>
           </Row>
           <Row>
-            <Col className=" border" sm={12} md={6}>
+            <Col className=" border" sm={12} md={7}>
               <h5 className="text-primary fw-bold ">
                 Part-I:- Scholastic Areas
               </h5>
-              <Row className="">
-                <Col className=" fw-bold p-0 border" lg={1}>
-                  SrNO
-                </Col>
-                <Col className="border fw-bold p-0 border"> Subjects</Col>
-                <Col className=" fw-bold p-0 border">
-                  <MarksTable />
-                </Col>
+              <Row >
+               <SectionOne/>
               </Row>
             </Col>
-            <Col>
+            <Col lassName=" border" sm={12} md={5}>
               <h5 className="text-primary fw-bold">
                 Part-II:- Scholastic Areas
               </h5>

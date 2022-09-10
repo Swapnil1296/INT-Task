@@ -4,89 +4,89 @@
       "id": 1,
       "subject": "English",
       "FA": 55,
-      "oral-1": 50,
+      "oral_1": 50,
       "BA": 77,
-      "Oral-2": 88
+      "oral_2": 88
     },
     {
       "id": 2,
       "subject": "Math",
       "FA": 57,
-      "oral-1": 50,
+      "oral_1": 50,
       "BA": 77,
-      "Oral-2": 88
+      "oral_2": 88
     },
     {
       "id": 3,
       "subject": "Sanskrit/Urdu",
       "FA": 55,
-      "oral-1": 50,
+      "oral_1": 50,
       "BA": 77,
-      "Oral-2": 88
+      "oral_2": 88
     },
     {
       "id": 4,
       "subject": "Mithili",
       "FA": 55,
-      "oral-1": 50,
+      "oral_1": 50,
       "BA": 77,
-      "Oral-2": 88
+      "oral_2": 88
     },
     {
       "id": 5,
       "subject": "EVS",
       "FA": 55,
-      "oral-1": 50,
+      "oral_1": 50,
       "BA": 77,
-      "Oral-2": 88
+      "oral_2": 88
     },
     {
       "id": 6,
       "subject": "Social Study",
       "FA": 55,
-      "oral-1": 50,
+      "oral_1": 50,
       "BA": 77,
-      "Oral-2": 88
+      "oral_2": 88
     },
     {
       "id": 7,
       "subject": "Computer",
       "FA": 55,
-      "oral-1": 50,
+      "oral_1": 50,
       "BA": 77,
-      "Oral-2": 88
+      "oral_2": 88
     },
     {
       "id": 8,
       "subject": "moral",
       "FA": 55,
-      "oral-1": 50,
+      "oral_1": 50,
       "BA": 77,
-      "Oral-2": 88
+      "oral_2": 88
     },
     {
       "id": 9,
       "subject": "GK",
       "FA": 55,
-      "oral-1": 50,
+      "oral_1": 50,
       "BA": 77,
-      "Oral-2": 88
+      "oral_2": 88
     },
     {
       "id": 10,
       "subject": "Conversation",
       "FA": 55,
-      "oral-1": 50,
+      "oral_1": 50,
       "BA": 77,
-      "Oral-2": 88
+      "oral_2": 88
     },
     {
       "id": 11,
       "subject": "Drawings",
       "FA": null,
-      "oral-1": null,
+      "oral_1": null,
       "BA": null,
-      "Oral-2": null
+      "oral_2": null
     }
   ],
   "part-2": [

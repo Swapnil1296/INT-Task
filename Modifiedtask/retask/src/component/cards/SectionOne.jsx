@@ -1,31 +1,103 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
 
-const SectionOne = () => {
+const SectionOne = ({data}) => {
+  // const res = data.map((e) => {
+  //   return e.FA
+  // })
+  // console.log(res)
   return (
     <>
-    <Col className='border p-2'lg md xl={1}  xs={2}>Sr.No</Col>
-    <Col className='border  fw-bold text-primary p-3' lg md xl={4}  xs={3}>SUBJECTS</Col>
-    <Col lg md xl={7}  xs={7}>
-    <Row className='border text-center'>
-     <Col className='border pl-sm-0' lg md xl={2} xs={2} >FA</Col> 
-     <Col className='border pl-sm-0' lg md xl={2} xs={2} >Oral</Col> 
-     <Col className='border pl-sm-0' lg md xl={2} xs={2} >BA</Col> 
-     <Col className='border pl-sm-0' lg md xl={2} xs={2} >Oral</Col> 
-     <Col className=' border pl-sm-0'  lg md xl={4} xs={4} >OverAll</Col> 
-     
-    </Row>
-    <Row className='border text-center'>
-    <Col className='border 'xs={2} lg md xl={2}>10</Col> 
-     <Col className='border 'xs={2} lg md xl={2}>20</Col> 
-     <Col className='border ' xs={2} lg md xl={2}>30</Col> 
-     <Col className='border ' xs={2} lg md xl={2}>40</Col> 
-     <Col className='border '  xs={4} lg md xl={4}>50</Col> 
-    </Row>
-    </Col>
-   
+      {data &&
+        data.map((item, i) => (
+          <Row key={i}>
+            <Col
+              className="border border-dark text-center "
+              lg={2}
+              md={2}
+              xl={2}
+              xxl={2}
+              xs={1}
+              sm={1}
+            >
+              <p className="p-0 m-0">{item.id}</p>
+            </Col>
+            <Col
+              className="border border-dark text-center"
+              lg={4}
+              md={4}
+              xl={4}
+              xxl={4}
+              xs={4}
+              sm={4}
+            >
+              <p className="p-0 m-0 fw-bold ">{item.subject}</p>
+            </Col>
+            <Col>
+              <Row>
+                <Col
+                  className="border border-dark text-center p-0 m-0"
+                  lg={2}
+                  md={2}
+                  xl={2}
+                  xxl={2}
+                  xs={2}
+                  sm={2}
+                >
+                  <p className="p-0 m-0 ">{item.FA}</p>
+                </Col>
+                <Col
+                  className="border border-dark text-center p-0"
+                  lg={2}
+                  md={2}
+                  xl={2}
+                  xxl={2}
+                  xs={3}
+                  sm={3}
+                >
+                  <p className="p-0 m-0 ">{item.oral_1}</p>
+                </Col>
+                <Col
+                  className="border border-dark text-center p-0"
+                  lg={2}
+                  md={2}
+                  xl={2}
+                  xxl={2}
+                  xs={2}
+                  sm={2}
+                >
+                  <p className="p-0 m-0  ">{item.BA}</p>
+                </Col>
+                <Col
+                  className="border border-dark text-center p-0"
+                  lg={2}
+                  md={2}
+                  xl={2}
+                  xxl={2}
+                  xs={3}
+                  sm={3}
+                >
+                  <p className="p-0 m-0 ">{item.oral_2}</p>
+                </Col>
+                <Col
+                  className="border border-dark text-center p-0"
+                  lg={4}
+                  md={4}
+                  xl={4}
+                  xxl={4}
+                  xs={2}
+                  sm={2}
+                >
+                  <p className="p-0 m-0 ">
+                    {item.FA + item.BA + item.oral_1 + item.oral_2}
+                  </p>
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+        ))}
     </>
-  )
+  );
 }
 
 export default SectionOne

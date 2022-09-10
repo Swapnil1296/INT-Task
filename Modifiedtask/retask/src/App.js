@@ -5,7 +5,7 @@ import UserView from './component/cards/UserView'
 
 function App() {
   return (
-    <div className="App">
+    <div>
   <UserView/>
     </div>
   );

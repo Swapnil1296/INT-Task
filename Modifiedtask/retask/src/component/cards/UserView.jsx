@@ -1,20 +1,24 @@
 import {Col, Container, Row} from 'react-bootstrap';
 
 import SectionOne from './SectionOne';
-import studentData from '../data/data.json'
+import studentData from '../data/data.json';
+import SectionTwo from './SectionTwo';
+import GrandTotal from './GrandTotal';
+import SectionThree from './SectionThree';
 
 const UserView = () => {
-  const data = studentData["part-1"]
-  console.log(data)
+  const data = studentData['part-1'];
+  const gradeData = studentData['part-2'];
+  // console.log(gradeData)
   return (
     <>
       <Container className="border border-dark ">
-        <Row className="border  ">
+        <Row className="border  border-dark">
           <p className="text-danger  text-center fw-bold">
             First Terminal Examination 2018-19
           </p>
         </Row>
-        <Row className="border-dark ">
+        <Row className=" border border-dark ">
           <p className="text-primary fw-bold text-center">
             Academic Performance
           </p>
@@ -30,7 +34,7 @@ const UserView = () => {
             xs={12}
             sm={12}
           >
-            <p className="text-primary text-center fw-bold">
+            <p className="text-primary text-center fw-bold ">
               Part-I: Scholastic Areas
             </p>
             <Row>
@@ -182,46 +186,43 @@ const UserView = () => {
               </Col>
             </Row>
             <SectionOne data={data} />
+            <GrandTotal />
             {/* <Row>
-              <Col className="border border-dark text-center">Grand Total</Col>
-              <Col className="border border-dark text-center">Grand Total</Col>
+              <Col className="border border-dark text-center fw-bold fs-5">
+                Grand Total
+              </Col>
+              <Col className="border border-dark text-end fw-bold fs-5">
+              482
+              </Col>
             </Row>
             <Row>
-              <Col className="border border-dark text-center">Grand Total</Col>
-              <Col className="border border-dark text-center">Grand Total</Col>
-            </Row>
-            <Row>
-              <Col className="border border-dark text-center">Grand Total</Col>
-              <Col className="border border-dark text-center">Grand Total</Col>
+              <Col className="border border-dark text-center fw-bold fs-5">
+                Percentage
+              </Col>
+              <Col className="border border-dark text-end  fw-bold fs-5">
+               94.5
+              </Col>
             </Row> */}
           </Col>
           {/*section two */}
-          <Col
-            className="border border-dark "
-            lg={5}
-            md={5}
-            xl={5}
-            xxl={5}
-            xs={12}
-            sm={12}
-          >
-            <p className="text-primary text-center fw-bold  ">
-              Part-II: Co-Scholastic Areas
-            </p>
+          <Col lg={5} md={5} xl={5} xxl={5} xs={12} sm={12}>
+           
+                <p className="text-primary text-center fw-bold  ">
+                  Part-II: Co-Scholastic Areas
+                </p>
+             
             <Row lg={5} md={5} xl={5} xxl={5} xs={5} sm={5}>
               <Col
-                className="border border-dark text-center "
+                className="border border-dark text-center fw-bold fs-5 "
                 lg={7}
                 md={7}
                 xl={7}
                 xxl={7}
                 xs={7}
                 sm={7}
-              >
-                Name
-              </Col>
+              ></Col>
               <Col
-                className="border border-dark text-center"
+                className="border border-dark text-center fw-bold fs-4  p-2"
                 lg={5}
                 md={5}
                 xl={5}
@@ -229,11 +230,13 @@ const UserView = () => {
                 xs={5}
                 sm={5}
               >
-                Name
+                Grades
               </Col>
             </Row>
+            <SectionTwo gradeData={gradeData} />
           </Col>
         </Row>
+        <SectionThree/>
       </Container>
     </>
   );

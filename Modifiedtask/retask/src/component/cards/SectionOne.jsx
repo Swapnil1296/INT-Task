@@ -23,7 +23,7 @@ const SectionOne = ({data}) => {
               <p className="p-0 m-0">{item.id}</p>
             </Col>
             <Col
-              className="border border-dark text-center"
+              className="border border-dark"
               lg={4}
               md={4}
               xl={4}

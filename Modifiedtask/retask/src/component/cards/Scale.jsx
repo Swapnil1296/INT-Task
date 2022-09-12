@@ -1,291 +1,78 @@
 import React from 'react';
-import {Col, Row} from 'react-bootstrap';
+import {Col, Row} from 'react-bootstrap'
+import data from '../data/data.json';
 
 const Scale = () => {
+  const showData= data["part-3"]
+console.log(showData)
   return (
     <>
       <Row>
-        <Col className="text-center fw-bold fs-4">GRADING SCALE</Col>
+        <Col className="text-center fw-bold "><span className='fw-bold fs-4'>G</span>RADING <span className='fw-bold fs-4'>S</span>CALE</Col>
       </Row>
-      <Row className="w-sm-100 w-xs-100 w-50 m-auto border border-dark text-center fw-bold ">
-        <Col
-          className="border border-dark p-0"
-          lg={4}
-          md={4}
-          xl={4}
-          xxl={4}
-          xs={4}
-          sm={4}
-        >
-          Marks Range
+
+      <Row className="mt-3"> 
+        <Col></Col>
+        <Col lg={6} md={6} sm={8} xs={12}>
+       q
+          <Row className="border border-bottom-0 border-dark fw-bold ">
+            <Col lg={4} md={4} sm={4} xs={4} className>
+              <span className="fonts"> MARKS RANGE</span>
+             
+            </Col>
+            <Col
+              lg={4}
+              md={4}
+              sm={4}
+              xs={4}
+              className="border-start border-end border-dark"
+            >
+              <span className="fonts">GRADES</span>
+              
+            </Col>
+            <Col lg={4} md={4} sm={4} xs={4}>
+              <span className="fonts">  REMARKS</span>
+            
+            </Col>
+          </Row>
+
+          {showData  && showData.map((el,i) => (
+            <Row className="border border-bottom-0 border-dark " key={i}>
+              <Col
+                lg={4}
+                md={4}
+                sm={4}
+                xs={4}
+                className="border-bottom-0 border-dark "
+              >
+                <span className="fonts"> {el.rank}</span>
+               
+              </Col>
+              <Col
+                lg={4}
+                md={4}
+                sm={4}
+                xs={4}
+                className="border-start border-end border-bottom-0 border-dark "
+              >
+                <span className="fonts">{el.grades}</span>
+                
+              </Col>
+              <Col
+                lg={4}
+                md={4}
+                sm={4}
+                xs={4}
+                className="border-bottom-0 border-dark "
+              >
+                     <span className="fonts">{el.remark}</span>
+                
+              
+              </Col>
+            </Row>
+          ))}
         </Col>
-        <Col
-          className="border border-dark p-0"
-          lg={4}
-          md={4}
-          xl={4}
-          xxl={4}
-          xs={4}
-          sm={4}
-        >
-          Grades
-        </Col>
-        <Col
-          className="border border-dark p-0"
-          lg={4}
-          md={4}
-          xl={4}
-          xxl={4}
-          xs={4}
-          sm={4}
-        >
-          Remarks
-        </Col>
-      </Row>
-      <Row className="w-sm-100 w-xs-100 w-50 m-auto border border-dark text-center ">
-        <Col
-          className="border border-dark p-0"
-          lg={4}
-          md={4}
-          xl={4}
-          xxl={4}
-          xs={4}
-          sm={4}
-        >
-          01-100
-        </Col>
-        <Col
-          className="border border-dark p-0"
-          lg={4}
-          md={4}
-          xl={4}
-          xxl={4}
-          xs={4}
-          sm={4}
-        >
-          A-1
-        </Col>
-        <Col
-          className="border border-dark p-0"
-          lg={4}
-          md={4}
-          xl={4}
-          xxl={4}
-          xs={4}
-          sm={4}
-        >
-          Excellent
-        </Col>
-      </Row>
-      <Row className="w-sm-100 w-xs-100 w-50 m-auto border border-dark text-center  ">
-        <Col
-          className="border border-dark p-0"
-          lg={4}
-          md={4}
-          xl={4}
-          xxl={4}
-          xs={4}
-          sm={4}
-        >
-          01-90
-        </Col>
-        <Col
-          className="border border-dark p-0"
-          lg={4}
-          md={4}
-          xl={4}
-          xxl={4}
-          xs={4}
-          sm={4}
-        >
-          A 2
-        </Col>
-        <Col
-          className="border border-dark p-0"
-          lg={4}
-          md={4}
-          xl={4}
-          xxl={4}
-          xs={4}
-          sm={4}
-        >
-          Very Good
-        </Col>
-      </Row>{' '}
-      <Row className="w-sm-100 w-xs-100 w-50 m-auto border border-dark text-center  ">
-        <Col
-          className="border border-dark p-0"
-          lg={4}
-          md={4}
-          xl={4}
-          xxl={4}
-          xs={4}
-          sm={4}
-        >
-          71-80
-        </Col>
-        <Col
-          className="border border-dark p-0"
-          lg={4}
-          md={4}
-          xl={4}
-          xxl={4}
-          xs={4}
-          sm={4}
-        >
-          B 1
-        </Col>
-        <Col
-          className="border border-dark p-0"
-          lg={4}
-          md={4}
-          xl={4}
-          xxl={4}
-          xs={4}
-          sm={4}
-        >
-          Good
-        </Col>
-      </Row>{' '}
-      <Row className="w-sm-100 w-xs-100 w-50 m-auto border border-dark text-center">
-        <Col
-          className="border border-dark p-0"
-          lg={4}
-          md={4}
-          xl={4}
-          xxl={4}
-          xs={4}
-          sm={4}
-        >
-          61-70
-        </Col>
-        <Col
-          className="border border-dark p-0"
-          lg={4}
-          md={4}
-          xl={4}
-          xxl={4}
-          xs={4}
-          sm={4}
-        >
-          B 2
-        </Col>
-        <Col
-          className="border border-dark p-0 text-wrap"
-          lg={4}
-          md={4}
-          xl={4}
-          xxl={4}
-          xs={4}
-          sm={4}
-        >
-          Satis- factory
-        </Col>
-      </Row>{' '}
-      <Row className="w-sm-100 w-xs-100 w-50 m-auto border border-dark text-center fw-bold ">
-        <Col
-          className="border border-dark p-0"
-          lg={4}
-          md={4}
-          xl={4}
-          xxl={4}
-          xs={4}
-          sm={4}
-        >
-          Marks Range
-        </Col>
-        <Col
-          className="border border-dark p-0"
-          lg={4}
-          md={4}
-          xl={4}
-          xxl={4}
-          xs={4}
-          sm={4}
-        >
-          Grades
-        </Col>
-        <Col
-          className="border border-dark p-0"
-          lg={4}
-          md={4}
-          xl={4}
-          xxl={4}
-          xs={4}
-          sm={4}
-        >
-          Remarks
-        </Col>
-      </Row>{' '}
-      <Row className="w-sm-100 w-xs-100 w-50 m-auto border border-dark text-center fw-bold ">
-        <Col
-          className="border border-dark p-0"
-          lg={4}
-          md={4}
-          xl={4}
-          xxl={4}
-          xs={4}
-          sm={4}
-        >
-          Marks Range
-        </Col>
-        <Col
-          className="border border-dark p-0"
-          lg={4}
-          md={4}
-          xl={4}
-          xxl={4}
-          xs={4}
-          sm={4}
-        >
-          Grades
-        </Col>
-        <Col
-          className="border border-dark p-0"
-          lg={4}
-          md={4}
-          xl={4}
-          xxl={4}
-          xs={4}
-          sm={4}
-        >
-          Remarks
-        </Col>
-      </Row>{' '}
-      <Row className="w-sm-100 w-xs-100 w-50 m-auto border border-dark text-center fw-bold ">
-        <Col
-          className="border border-dark p-0"
-          lg={4}
-          md={4}
-          xl={4}
-          xxl={4}
-          xs={4}
-          sm={4}
-        >
-          Marks Range
-        </Col>
-        <Col
-          className="border border-dark p-0"
-          lg={4}
-          md={4}
-          xl={4}
-          xxl={4}
-          xs={4}
-          sm={4}
-        >
-          Grades
-        </Col>
-        <Col
-          className="border border-dark p-0"
-          lg={4}
-          md={4}
-          xl={4}
-          xxl={4}
-          xs={4}
-          sm={4}
-        >
-          Remarks
-        </Col>
+        <Col></Col>
       </Row>
       <Row className='border border-dark'>
         <Col className="text-center  fst-italic">Our Parents are seen God ont the Earth</Col>

@@ -8,9 +8,9 @@ const SectionThree = () => {
       <Row className="text-center fw-bold  mx-2 my-1">
         <p>Part-III : Attendence</p>
       </Row>
-      <Row className="text-center fw-bold border border-dark  mx-2">
+      <Row className="text-center fw-bold   mx-2">
         <Col
-          className="border border-dark"
+          className="border border-dark border-bottom-1 border-top-1 border-start-1 border-end-1"
           lg={2}
           md={2}
           xl={2}
@@ -19,7 +19,7 @@ const SectionThree = () => {
           sm={3}
         ></Col>
         <Col
-          className="border border-dark"
+         className="border border-dark border-bottom-1 border-top-1 border-start-0 border-end-1"
           lg={4}
           md={4}
           xl={4}
@@ -30,7 +30,7 @@ const SectionThree = () => {
           No. of Working Days
         </Col>
         <Col
-          className="border border-dark"
+        className="border border-dark border-bottom-1 border-top-1 border-start-0 border-end-1"
           lg={4}
           md={4}
           xl={4}
@@ -41,7 +41,7 @@ const SectionThree = () => {
           No. of Days Present
         </Col>
         <Col
-          className="border border-dark p-0 m-0"
+        className="border border-dark border-bottom-1 border-top-1 border-start-0 border-end-1 p-0"
           lg={2}
           md={2}
           xl={2}
@@ -52,9 +52,9 @@ const SectionThree = () => {
           Percentage
         </Col>
       </Row>
-      <Row className="text-center fw-bold border border-dark  mx-2">
+      <Row className="text-center fw-bold   mx-2">
         <Col
-          className="border border-dark"
+        className="border border-dark border-bottom-1 border-top-0 border-start-1 border-end-1"
           lg={2}
           md={2}
           xl={2}
@@ -65,7 +65,7 @@ const SectionThree = () => {
           TERM-1
         </Col>
         <Col
-          className="border border-dark"
+        className="border border-dark border-bottom-1 border-top-0 border-start-0 border-end-1"
           lg={4}
           md={4}
           xl={4}
@@ -76,7 +76,7 @@ const SectionThree = () => {
           83
         </Col>
         <Col
-          className="border border-dark"
+          className="border border-dark border-bottom-1 border-top-0 border-start-0 border-end-1"
           lg={4}
           md={4}
           xl={4}
@@ -87,7 +87,7 @@ const SectionThree = () => {
           83
         </Col>
         <Col
-          className="border border-dark"
+          className="border border-dark border-bottom-1 border-top-0 border-start-0 border-end-1"
           lg={2}
           md={2}
           xl={2}
@@ -114,12 +114,12 @@ const SectionThree = () => {
         </Col>
       </Row>
       <Row className=" fw-bold  mx-2 my-4">
-        <Col lg={4} md={4} xl={4} xxl={4} xs={4} sm={4}>
+        <Col lg={4} md={4} xl={4} xxl={4} xs={4} sm={4} className="fst-italic">
          Student's Signature
         </Col>
         {/* <Col lg={4} md={4} xl={4} xxl={4} xs={4} sm={4}></Col> */}
-        <Col className='text-center' lg={4} md={4} xl={4} xxl={4} xs={4} sm={4}>Parent's Signature</Col>
-        <Col className="text-end" lg={4} md={4} xl={4} xxl={4} xs={4} sm={4}>
+        <Col className='text-center fst-italic' lg={4} md={4} xl={4} xxl={4} xs={4} sm={4} >Parent's Signature</Col>
+        <Col className="text-end fst-italic" lg={4} md={4} xl={4} xxl={4} xs={4} sm={4}>
          Principle Signature
         </Col>
           </Row>

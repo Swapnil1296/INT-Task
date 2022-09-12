@@ -9,7 +9,7 @@ const SectionTwo = ({ gradeData }) => {
         gradeData.map((item, i) => (
           <Row key={i} lg={5} md={5} xl={5} xxl={5} xs={5} sm={5} >
             <Col
-              className="border border-dark  fw-bold p-1"
+              className="border border-dark border-bottom-1 border-start-0 border-end-1 border-top-0  fw-bold p-1"
               style={{fontSize:"16px"}}
               lg={7}
               md={7}
@@ -19,7 +19,7 @@ const SectionTwo = ({ gradeData }) => {
               sm={7}
             > {item.topic}</Col>
             <Col
-              className="border border-dark text-center fw-bold"
+              className="border border-dark border-bottom-1 border-start-0 border-end-0 border-top-0 text-center fw-bold"
               lg={5}
               md={5}
               xl={5}

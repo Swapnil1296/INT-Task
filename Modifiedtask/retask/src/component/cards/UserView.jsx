@@ -12,13 +12,13 @@ const UserView = () => {
   // console.log(gradeData)
   return (
     <>
-      <Container className="border border-dark ">
-        <Row className="border  border-dark">
+      <Container className="border border-dark border-2">
+        <Row className="border border-dark border-bottom-1 border-start-0 border-end-0 border-top-0">
           <p className="text-danger  text-center fw-bold">
             First Terminal Examination 2018-19
           </p>
         </Row>
-        <Row className=" border border-dark ">
+        <Row className="border border-dark border-bottom-1 border-start-0 border-end-0 border-top-0 ">
           <p className="text-primary fw-bold text-center">
             Academic Performance
           </p>
@@ -26,7 +26,7 @@ const UserView = () => {
         <Row>
           {/*Section one  */}
           <Col
-            className="border border-dark"
+         
             lg={7}
             md={7}
             xl={7}
@@ -34,12 +34,16 @@ const UserView = () => {
             xs={12}
             sm={12}
           >
+           <Row>
+            <Col    className="border border-dark border-bottom-1 border-start-0 border-end-1 border-top-0">
             <p className="text-primary text-center fw-bold ">
               Part-I: Scholastic Areas
             </p>
+            </Col>
+           </Row>
             <Row>
               <Col
-                className="border border-dark text-center p-0"
+                className="border border-dark border-bottom-1 border-start-0 border-end-1 border-top-0 text-center p-0"
                 lg={2}
                 md={2}
                 xl={2}
@@ -50,7 +54,7 @@ const UserView = () => {
                 <p> Sr No</p>
               </Col>
               <Col
-                className="border border-dark text-center fw-bold fs-5 "
+                className="border border-dark border-bottom-1 border-start-0 border-end-1 border-top-0 text-center fw-bold fs-5 "
                 lg={4}
                 md={4}
                 xl={4}
@@ -61,7 +65,7 @@ const UserView = () => {
                 <p>Subjects</p>
               </Col>
               <Col
-                className="border border-dark text-center"
+                className="border border-dark border-bottom-1 border-start-0 border-end-1 border-top-0 text-center"
                 lg={6}
                 md={6}
                 xl={6}
@@ -71,7 +75,7 @@ const UserView = () => {
               >
                 <Row>
                   <Col
-                    className="border border-dark text-center p-0 m-0"
+                    className="border border-dark border-bottom-1 border-start-0 border-end-1 border-top-0 text-center p-0 m-0"
                     lg={2}
                     md={2}
                     xl={2}
@@ -82,7 +86,7 @@ const UserView = () => {
                     <p className="p-0 m-0"> FA</p>
                   </Col>
                   <Col
-                    className="border border-dark text-center p-0"
+                    className="border border-dark border-bottom-1 border-start-0 border-end-1 border-top-0 text-center p-0"
                     lg={2}
                     md={2}
                     xl={2}
@@ -93,7 +97,7 @@ const UserView = () => {
                     <p className="p-0 m-0">Oral</p>
                   </Col>
                   <Col
-                    className="border border-dark text-center p-0"
+                    className="border border-dark border-bottom-1 border-start-0 border-end-1 border-top-0 text-center p-0"
                     lg={2}
                     md={2}
                     xl={2}
@@ -104,7 +108,7 @@ const UserView = () => {
                     <p className="p-0 m-0"> BA</p>
                   </Col>
                   <Col
-                    className="border border-dark text-center p-0"
+                    className="border border-dark border-bottom-1 border-start-0 border-end-1 border-top-0 text-center p-0"
                     lg={2}
                     md={2}
                     xl={2}
@@ -115,7 +119,7 @@ const UserView = () => {
                     <p className="p-0 m-0">Oral</p>
                   </Col>
                   <Col
-                    className="border border-dark text-center p-0"
+                    className="border border-dark border-bottom-1 border-start-0 border-end-0 border-top-0 text-center p-0"
                     lg={4}
                     md={4}
                     xl={4}
@@ -128,7 +132,7 @@ const UserView = () => {
                 </Row>
                 <Row>
                   <Col
-                    className="border border-dark text-center p-0 m-0"
+                    className="border border-dark border-bottom-0 border-start-0 border-end-1 border-top-0 text-center p-0 m-0"
                     lg={2}
                     md={2}
                     xl={2}
@@ -139,7 +143,7 @@ const UserView = () => {
                     20
                   </Col>
                   <Col
-                    className="border border-dark text-center p-0"
+                    className="border border-dark border-bottom-0 border-start-0 border-end-1 border-top-0 text-center p-0"
                     lg={2}
                     md={2}
                     xl={2}
@@ -150,7 +154,7 @@ const UserView = () => {
                     30
                   </Col>
                   <Col
-                    className="border border-dark text-center p-0"
+                    className="border border-dark border-bottom-0 border-start-0 border-end-1 border-top-0 text-center p-0"
                     lg={2}
                     md={2}
                     xl={2}
@@ -161,7 +165,7 @@ const UserView = () => {
                     40
                   </Col>
                   <Col
-                    className="border border-dark text-center p-0"
+                    className="border border-dark border-bottom-0 border-start-0 border-end-1 border-top-0 text-center p-0"
                     lg={2}
                     md={2}
                     xl={2}
@@ -172,7 +176,7 @@ const UserView = () => {
                     50
                   </Col>
                   <Col
-                    className="border border-dark text-center p-0"
+                    className="border border-dark border-bottom-0 border-start-0 border-end-0 border-top-0 text-center p-0"
                     lg={4}
                     md={4}
                     xl={4}
@@ -187,33 +191,22 @@ const UserView = () => {
             </Row>
             <SectionOne data={data} />
             <GrandTotal />
-            {/* <Row>
-              <Col className="border border-dark text-center fw-bold fs-5">
-                Grand Total
-              </Col>
-              <Col className="border border-dark text-end fw-bold fs-5">
-              482
-              </Col>
-            </Row>
-            <Row>
-              <Col className="border border-dark text-center fw-bold fs-5">
-                Percentage
-              </Col>
-              <Col className="border border-dark text-end  fw-bold fs-5">
-               94.5
-              </Col>
-            </Row> */}
+           
           </Col>
           {/*section two */}
-          <Col lg={5} md={5} xl={5} xxl={5} xs={12} sm={12}>
-           
-                <p className="text-primary text-center fw-bold  ">
+          <Col lg={5} md={5} xl={5} xxl={5} xs={12} sm={12} >
+           <Row>
+            <Col className="border border-dark border-bottom-1 border-start-0 border-end-0 border-top-0">
+            <p className="text-primary text-center fw-bold  ">
                   Part-II: Co-Scholastic Areas
                 </p>
              
+            </Col>
+           </Row>
+              
             <Row lg={5} md={5} xl={5} xxl={5} xs={5} sm={5}>
               <Col
-                className="border border-dark text-center fw-bold fs-5 "
+                className="border border-dark border-bottom-1 border-start-0 border-end-1 border-top-0 text-center fw-bold fs-5 "
                 lg={7}
                 md={7}
                 xl={7}
@@ -222,7 +215,7 @@ const UserView = () => {
                 sm={7}
               ></Col>
               <Col
-                className="border border-dark text-center fw-bold fs-4  p-2"
+                className="border border-dark border-bottom-1 border-start-0 border-end-0 border-top-0 text-center fw-bold fs-4  p-2"
                 lg={5}
                 md={5}
                 xl={5}

@@ -148,15 +148,40 @@
   ],
   "part-3": [
     {
-      "N": 1,
-      "Name": "Swapnil",
-      "marks": {
-        "Math": 70,
-        "english": 70,
-        "science": 78,
-        "History": 90,
-        "Physics": 80
-      }
-    }
+     "id":0,
+     "rank":"91-100",
+     "grades":"A 1",
+     "remark":"Excellent"
+    }, {
+      "id":0,
+      "rank":"81-90",
+      "grades":"A 2",
+      "remark":"Very Good"
+     }, {
+      "id":0,
+      "rank":"71-80",
+      "grades":"B 1",
+      "remark":"Good"
+     }, {
+      "id":0,
+      "rank":"61-70",
+      "grades":"B 2",
+      "remark":"Good"
+     }, {
+      "id":0,
+      "rank":"51-60",
+      "grades":"C 1",
+      "remark":"Satisfactory"
+     }, {
+      "id":0,
+      "rank":"41-50",
+      "grades":"C 2",
+      "remark":"Unsatisfactory"
+     }, {
+      "id":0,
+      "rank":"Below 40",
+      "grades":"D",
+      "remark":"Fail/Pass"
+     } 
   ]
 }
